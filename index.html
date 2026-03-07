@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HERO VIDEO ================= -->
+    <section class="hero">
+      <div class="video-overlay"></div>
+
+      <iframe
+        src="https://www.youtube.com/embed/w6dPkGjStUo?autoplay=1&mute=1&loop=1&playlist=w6dPkGjStUo&rel=0&controls=0&modestbranding=1&playsinline=1"
+        title="Hero Video"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <div class="hero-text">
+        <h1>Our Story</h1>
+        <p>A collection of moments, memories, and love</p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#captured">View Memories</a>
+          <a class="btn btn-ghost" href="#photos">Photos</a>
+          <a class="btn btn-ghost" href="#videos">Videos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section gallery" id="captured">
+      <div class="section-head">
+        <h2>Captured Moments</h2>
+        <p class="muted">Tap a photo to view it bigger.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card fade-in">
+          <img src="images/photo1.jpg" alt="Memory 1" />
+          <div class="card-text">
+            <h3>New Year</h3>
+            <p>Still my favorite person.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <img src="images/photo2.jpg" alt="Memory 2" />
+          <div class="card-text">
+            <h3>Quiet Nights</h3>
+            <p>Peace feels like this.</p>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <img src="images/photo3.jpg" alt="Memory 3" />
+          <div class="card-text">
+            <h3>Forever Energy</h3>
+            <p>You are my favorite place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PHOTO PAGE ================= -->
+    <section class="section media-page" id="photos">
+      <div class="section-head">
+        <h2>More Photos</h2>
+        <p class="muted">Portrait set first, then landscape set.</p>
+      </div>
+
+      <div class="media-block">
+        <h3 class="block-title">Portrait Photos</h3>
+
+        <div class="media-grid portraits">
+          <figure class="media-card fade-in">
+            <img src="images/portrait1.jpg" alt="Portrait 1" />
+            <figcaption>Calm happiness</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/portrait2.jpg" alt="Portrait 2" />
+            <figcaption>Blooming together</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/portrait3.jpg" alt="Portrait 3" />
+            <figcaption>Warm moments</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/portrait4.jpg" alt="Portrait 4" />
+            <figcaption>Always you</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="media-divider"></div>
+
+      <div class="media-block">
+        <h3 class="block-title">Landscape Photos</h3>
+
+        <div class="media-grid landscapes">
+          <figure class="media-card fade-in">
+            <img src="images/landscape1.jpg" alt="Landscape 1" />
+            <figcaption>Where we belong</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/landscape2.jpg" alt="Landscape 2" />
+            <figcaption>Our calm place</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/landscape3.jpg" alt="Landscape 3" />
+            <figcaption>Warm & real</figcaption>
+          </figure>
+
+          <figure class="media-card fade-in">
+            <img src="images/landscape4.jpg" alt="Landscape 4" />
+            <figcaption>Endless</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIDEO PAGE (INLINE PLAY) ================= -->
+    <section class="section video-page" id="videos">
+      <div class="section-head">
+        <h2>Video Memories</h2>
+        <p class="muted">A playlist full of laughter, love, and us.</p>
+      </div>
+
+      <!-- Portrait videos (4) -->
+      <div class="video-block">
+        <div class="video-block-head">
+          <h3>Portrait Videos</h3>
+          <span class="chip">Tap to play</span>
+        </div>
+
+        <div class="video-grid v-portraits">
+          <button
+            class="video-card fade-in"
+            data-yt="7sEMA5eCmZg"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster1.png"
+                alt="Portrait video 1 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta"><b>Simoy</b><small>Rob Deniel</small></div>
+          </button>
+
+          <button
+            class="video-card fade-in"
+            data-yt="bJEkXRl2W_Y"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster2.png"
+                alt="Portrait video 2 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta">
+              <b>Passenger Seat</b><small>Stephen Speaks</small>
+            </div>
+          </button>
+
+          <button
+            class="video-card fade-in"
+            data-yt="zeWEiFeLau4"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster3.png"
+                alt="Portrait video 3 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta">
+              <b>When Scars Become Art</b><small>Gatton</small>
+            </div>
+          </button>
+
+          <button
+            class="video-card fade-in"
+            data-yt="-ERZcTyLO-8"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster4.png"
+                alt="Portrait video 4 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta"><b>Blue</b><small>yung kai</small></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="media-divider"></div>
+
+      <!-- Landscape videos (3) -->
+      <div class="video-block">
+        <div class="video-block-head">
+          <h3>Landscape Videos</h3>
+          <span class="chip chip-alt">Cinematic Videos</span>
+        </div>
+
+        <div class="video-grid v-landscapes">
+          <button
+            class="video-wide fade-in"
+            data-yt="jzqj_NEeKJ4"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster5.png"
+                alt="Landscape video 1 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta"><b>Lalim</b><small>Mateo</small></div>
+          </button>
+
+          <button
+            class="video-wide fade-in"
+            data-yt="-oGbS3t5GQ0"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster6.png"
+                alt="Landscape video 2 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta"><b>Panaginip</b><small>Nicole</small></div>
+          </button>
+
+          <button
+            class="video-wide fade-in"
+            data-yt="DD46ppNlnMU"
+            type="button"
+          >
+            <div class="thumb">
+              <img
+                src="images/video_poster7.png"
+                alt="Landscape video 3 poster"
+              />
+              <span class="play">▶</span>
+            </div>
+
+            <div class="inline-player" hidden>
+              <iframe
+                loading="lazy"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="meta">
+              <b>Kalapastangan</b><small>fitterkarma</small>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMAGE MODAL (KEEP) ================= -->
+    <div class="modal" id="imageModal" aria-hidden="true">
+      <button class="close" aria-label="Close image modal">&times;</button>
+      <img class="modal-content" id="modalImage" alt="Expanded image" />
+    </div>
+
+    <footer class="footer">
+      <p>Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
