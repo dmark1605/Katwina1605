@@ -45,7 +45,7 @@ function stopAllInlineVideos() {
   videoButtons.forEach((btn) => {
     const wrap = btn.querySelector(".inline-player");
     const frame = wrap?.querySelector("iframe");
-    if (frame) frame.src = ""; // stop playback
+    if (frame) frame.src = "";
     if (wrap) wrap.hidden = true;
     btn.classList.remove("is-playing");
   });
@@ -82,10 +82,11 @@ videoButtons.forEach((btn) => {
 document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
 
-  if (imgModal?.style.display === "block") {
+  if (imgModal?.style.display === "flex") {
     imgModal.style.display = "none";
     imgModal.setAttribute("aria-hidden", "true");
   }
 
   stopAllInlineVideos();
 });
+
